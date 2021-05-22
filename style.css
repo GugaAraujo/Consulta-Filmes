@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box
+}
+  
+html, body {
+    font-family: Tahoma, sans-serif;
+    line-height: 1.6;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(199, 200, 200);
+}
+  
+header{
+    background-color: black;
+    color: #F5C518;
+    text-shadow: #ffffff 1px 1px 2px;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 60px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #fff;
+    height:50px; 
+    width: 50%;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+button {
+    background: #F5C518;
+    padding: 10px;
+    border: none;
+    height:50px;
+    font-size: 1.1em;
+    text-shadow: rgb(199, 189, 162) 1px 1px 1px;
+    text-transform: uppercase;
+}
+button:hover {
+    transition: .1s;
+    background: #e7bb1a;
+
+}
+
+.movies {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.box{
+    display: flex;
+}
+
+img{
+    max-height: 250px;
+    display: block; 
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    margin: 10px 0;
+    padding: 20px;
+    background: #ececec
+}
+
+.box-divider{
+    margin-left: 30px;
+}
