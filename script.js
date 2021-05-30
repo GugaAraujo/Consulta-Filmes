@@ -13,10 +13,11 @@ const button = document.querySelector('.btn-search-movie')
 // caso o status seja uma falha 401 na pesquisa, o cliente será informado.
 // caso contrário, retorna response.json. Aqui obtemos acesso as informações de dentro da API.
 button.addEventListener('click', (evento)=>{
+    button.textContent = "";
     evento.preventDefault()
     moviesDiv.innerHTML = ""
 
-    fetch(`http://www.omdbapi.com/?apikey=8a30bf8&s=${movie.value}`)
+    fetch(`https://www.omdbapi.com/?apikey=8a30bf8&s=${movie.value}`)
     .then((response)=> {
         if(response.status ===401){
             window.alert("Erro 401 - Entre em contato com o Administrador")
@@ -63,6 +64,6 @@ button.addEventListener('click', (evento)=>{
     .catch((erro)=>{
         console.log(erro)
     })
-
+    setTimeout(function(){button.textContent = "BUSCAR"; }, 150);
     document.querySelector('.form').reset('')
 })

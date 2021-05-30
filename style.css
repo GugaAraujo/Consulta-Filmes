@@ -52,6 +52,7 @@ button {
     background: #F5C518;
     padding: 10px;
     border: none;
+    width: 120px;
     height:50px;
     font-size: 1.1em;
     text-shadow: rgb(199, 189, 162) 1px 1px 1px;
