@@ -1,7 +1,17 @@
+//criando a constante para se referir a classe movies
 const moviesDiv = document.querySelector('.movies')
+
+// se refere a ID film
 const movie = document.querySelector('#film')
+// se refera classe do botão
 const button = document.querySelector('.btn-search-movie')
 
+
+// callback que: Ao disparar o click em button (.btn-search-movie),
+// A Div movies é Zerada, tento seus resultados anteriores apagados. Evita a somatória de várias pesquisas
+// função fetch acessa a API e insere no link o resultado informado pelo Cliente dentro do input com ID film.
+// caso o status seja uma falha 401 na pesquisa, o cliente será informado.
+// caso contrário, retorna response.json. Aqui obtemos acesso as informações de dentro da API.
 button.addEventListener('click', (evento)=>{
     evento.preventDefault()
     moviesDiv.innerHTML = ""
@@ -14,6 +24,8 @@ button.addEventListener('click', (evento)=>{
             return response.json()
         }
     })
+
+    // para cada elemento da busca, serão criadas novas tags  span, h4, p, img div
 
     .then((data) => {
         console.log(data)
