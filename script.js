@@ -57,7 +57,6 @@ button.addEventListener('click', (evento)=>{
             divider.appendChild(ano)
             divider.appendChild(tipo)
             
-            
         });
     })
 

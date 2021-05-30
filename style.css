@@ -69,8 +69,11 @@ button:hover {
     margin: 0 auto;
     padding: 20px 0;
 }
-.box{
+.box {
     display: flex;
+    margin: 10px 0;
+    padding: 20px;
+    background: #ececec
 }
 
 img{
@@ -83,12 +86,26 @@ p{
     padding: 0;
 }
 
-.box{
-    margin: 10px 0;
-    padding: 20px;
-    background: #ececec
-}
-
 .box-divider{
     margin-left: 30px;
+}
+@media (min-width:300px) and (max-width:1200px) {
+    html, body {
+        font-size: 18px;
+    }
+      
+    .box{
+        flex-direction: column;
+    }
+    img{
+        max-height: 230px;
+        display: block; 
+    }
+    h4 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    
 }
