@@ -98,7 +98,7 @@ p{
         flex-direction: column;
     }
     img{
-        max-height: 230px;
+        size: 200px;
         display: block; 
     }
     h4 {
